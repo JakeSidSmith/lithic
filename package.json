@@ -1,0 +1,25 @@
+{
+  "name": "lithic",
+  "version": "0.0.0",
+  "description": "React Static Site Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeSidSmith/lithic.git"
+  },
+  "keywords": [
+    "react",
+    "static",
+    "site",
+    "generator"
+  ],
+  "author": "Jake 'Sid' Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JakeSidSmith/lithic/issues"
+  },
+  "homepage": "https://github.com/JakeSidSmith/lithic#readme"
+}
