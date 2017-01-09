@@ -1,4 +1,4 @@
-# Lithic
+# lithic
 
 **React Static Site Generator**
 
