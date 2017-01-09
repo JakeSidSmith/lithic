@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "description": "React Static Site Generator",
   "main": "index.js",
+  "bin": {
+    "lithic": "src/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint-examples": "eslint -c node_modules/eslintrc/.eslintrc-es6-react examples/src/",
+    "lint-src": "eslint -c node_modules/eslintrc/.eslintrc-es5 src/",
+    "test": "npm run lint-src && npm run lint-examples"
   },
   "repository": {
     "type": "git",
