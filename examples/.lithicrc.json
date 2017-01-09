@@ -1,0 +1,54 @@
+{
+  "env": {
+    "ecmaVersion": 6
+  },
+
+  "pages": {
+    "source": "src/pages",
+    "output": "build",
+    "index": true,
+
+    "dataTypes": {
+      "template": true,
+      "content": true
+    }
+  },
+
+  "collections": [
+    {
+      "name": "articles",
+      "source": "src/articles",
+      "output": "build/blog",
+      "sortBy": "date",
+      "index": true,
+      "tags": true,
+
+      "dataTypes": {
+        "title": "string",
+        "date": "string",
+        "summary": "string",
+        "tags": "array",
+        "template": true,
+        "content": true
+      }
+    },
+
+    {
+      "name": "projects",
+      "source": "src/projects",
+      "output": "build/projects",
+      "sortBy": "title",
+      "index": true,
+      "tags": true,
+
+      "dataTypes": {
+        "title": "string",
+        "date": "string",
+        "summary": "string",
+        "tags": "array",
+        "template": true,
+        "content": true
+      }
+    }
+  ]
+}
