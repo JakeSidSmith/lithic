@@ -9,7 +9,9 @@
   "scripts": {
     "lint-examples": "eslint -c node_modules/eslintrc/.eslintrc-es6-react examples/src/",
     "lint-src": "eslint -c node_modules/eslintrc/.eslintrc-es5 src/",
-    "test": "npm run lint-src && npm run lint-examples"
+    "test": "npm run lint-src && npm run lint-examples",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,8 @@
     "babel-preset-react": "=6.16.0",
     "react": "=15.4.2",
     "react-dom": "=15.4.2",
-    "yargs": "=6.6.0"
+    "yargs": "=6.6.0",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "chai": "=3.5.0",
@@ -45,5 +48,6 @@
   },
   "engines": {
     "node": "6.9.1"
-  }
+  },
+  "snyk": true
 }
